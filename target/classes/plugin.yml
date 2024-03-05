@@ -1,0 +1,29 @@
+name: 'CraftserveRadiation'
+version: '1.6.2'
+authors: [TheMolkaPL <themolkapl@gmail.com>]
+website: 'https://github.com/Craftserve/CraftserveRadiation'
+main: pl.craftserve.radiation.RadiationPlugin
+api-version: '1.14'
+description: Makes world radioactive
+depend: ['WorldGuard']
+
+commands:
+  radiation:
+    description: 'Plugin commands.'
+    aliases: ['radiacja']
+    permission: 'craftserveradiation.radiation'
+    usage: '/radiation <safe <radius>|potion <identifier>>'
+
+permissions:
+  craftserveradiation.*:
+    description: 'Gives all possible permissions.'
+    default: false
+    children:
+    - 'craftserveradiation.ad'
+    - 'craftserveradiation.radiation'
+  craftserveradiation.ad:
+    description: 'Gives access to print Craftserve advertisement.'
+    default: op
+  craftserveradiation.radiation:
+    description: 'Gives access to the "/radiation" command.'
+    default: op
