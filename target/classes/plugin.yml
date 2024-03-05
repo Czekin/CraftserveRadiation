@@ -1,5 +1,5 @@
 name: 'CraftserveRadiation'
-version: '1.6.3'
+version: '1.6.4'
 authors: [TheMolkaPL <themolkapl@gmail.com>]
 website: 'https://github.com/Craftserve/CraftserveRadiation'
 main: pl.craftserve.radiation.RadiationPlugin

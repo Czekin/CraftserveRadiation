@@ -57,13 +57,13 @@ public class MetricsHandler implements Listener  {
         this.server.getPluginManager().registerEvents(this, this.plugin);
 
         try {
-            MetricsLite.start(this.plugin);
+            // MetricsLite.start(this.plugin);
         } catch (Throwable throwable) {
             logger.log(Level.SEVERE, "Could not start metrics.", throwable);
         }
 
         Metrics metrics = new Metrics(this.plugin, B_STATS_PLUGIN_ID);
-        this.setupBStatsCharts(metrics);
+        // this.setupBStatsCharts(metrics);
     }
 
     public void stop() {
