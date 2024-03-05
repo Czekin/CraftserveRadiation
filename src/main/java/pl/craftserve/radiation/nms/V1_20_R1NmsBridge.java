@@ -13,8 +13,8 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class V1_20_R0NmsBridge implements RadiationNmsBridge {
-    static final Logger logger = Logger.getLogger(V1_20_R0NmsBridge.class.getName());
+public class V1_20_R1NmsBridge implements RadiationNmsBridge {
+    static final Logger logger = Logger.getLogger(V1_20_R1NmsBridge.class.getName());
 
     private final Class<?> itemClass;
     private final Class<?> iRegistryClass;
@@ -33,7 +33,7 @@ public class V1_20_R0NmsBridge implements RadiationNmsBridge {
 
     private final Map<UUID, Integer> minWorldHeightMap = new HashMap<>();
 
-    public V1_20_R0NmsBridge(String version) {
+    public V1_20_R1NmsBridge(String version) {
         Objects.requireNonNull(version, "version");
 
         try {
