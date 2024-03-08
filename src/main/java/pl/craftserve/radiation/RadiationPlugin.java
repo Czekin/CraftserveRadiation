@@ -190,7 +190,7 @@ public final class RadiationPlugin extends JavaPlugin {
         radiationIds.addAll(this.activeRadiations.keySet());
         logger.info("Loaded and enabled " + this.activeRadiations.size() + " radiation(s): " + String.join(", ", radiationIds));
 
-        this.craftserveListener.enable();
+        // this.craftserveListener.enable();
         this.metricsHandler.start();
     }
 
